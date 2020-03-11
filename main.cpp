@@ -1,7 +1,7 @@
 #include "mbed.h"
 #include "BME280.h"
 
-Serial pc(USBTX,USBRX); 
+Serial pc(USBTX,USBRX,9600); 
 char addr = 0x76 << 1;
 
 BME280 TphI2c = BME280(D0, D1, addr);
